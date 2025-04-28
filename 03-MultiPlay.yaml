@@ -1,0 +1,14 @@
+- name: This is play-1
+  hosts: localhost
+  tasks:
+  - name: Play-1 and Task-1
+    ansible.builtin.debug:
+     msg: "This is at Play-1 level and task-1 "
+
+- name: This is play-2
+  hosts: localhost
+  tasks:
+  - name: Play-2 and Task-1
+    ansible.builtin.debug:
+     msg: " This is at Plat-2 and Task-1 "
+      

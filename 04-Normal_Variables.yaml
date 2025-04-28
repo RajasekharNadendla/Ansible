@@ -1,0 +1,10 @@
+- name: Normal Variables
+  hosts: localhost
+  vars:
+   course: "DevOps"
+   mentor: "Siva"
+   Duration: "120 hours"
+  tasks:
+  - name: Normal Variables
+    ansible.builtin.debug:
+     msg: "I am learning {{ course }} from {{ mentor }} of duration {{ Duration }}"

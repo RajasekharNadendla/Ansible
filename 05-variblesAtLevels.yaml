@@ -1,0 +1,16 @@
+- name: Variables at levels
+  hosts: localhost
+  vars:
+   course: "Ansible"
+   trainer: "Siva"
+   duration: "15 hrs"
+  tasks:
+  - name: vars at task-1 with overriding
+    vars:
+     course: "Terraform"
+    ansible.builtin.debug:
+     msg: "I am learning {{ course }} from trainer {{ trainer }} of duration {{ duration }}"
+  
+  - name: vars at task-2 with inheritance
+    ansible.builtin.debug:
+     msg: "I am learning {{ course }} from trainer {{ trainer }} of duration {{ duration }}"
