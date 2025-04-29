@@ -59,7 +59,7 @@
 
 
 
-- name: convert dictionary to items/lists
+- name: convert items/lists to dictionary  
   hosts: localhost
   vars:
    my_list:
