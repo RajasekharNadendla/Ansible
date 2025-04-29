@@ -1,5 +1,5 @@
 - name: install packages using loops
-  hosts: localhost\
+  hosts: localhost
   become: yes
   tasks:
   - name: install packages 
